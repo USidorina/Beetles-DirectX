@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="Orbit Camera">
+      <UniqueIdentifier>{a2a0009a-3dd8-45c9-a430-1258c6dfdfae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Body">
+      <UniqueIdentifier>{0cdcf389-4d6b-4983-a2b5-ca0cdf5d3659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Leg">
+      <UniqueIdentifier>{043bd587-4904-49fa-ba01-3399c6797645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foot">
+      <UniqueIdentifier>{b4ac7a4e-babb-4fdb-ad3a-6b60751e4c77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="orbit_camera.cpp">
+      <Filter>Orbit Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="body.cpp">
+      <Filter>Body</Filter>
+    </ClCompile>
+    <ClCompile Include="leg.cpp">
+      <Filter>Leg</Filter>
+    </ClCompile>
+    <ClCompile Include="foot.cpp">
+      <Filter>Foot</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="beetles.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ClInclude Include="orbit_camera.h">
+      <Filter>Orbit Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="body.h">
+      <Filter>Body</Filter>
+    </ClInclude>
+    <ClInclude Include="leg.h">
+      <Filter>Leg</Filter>
+    </ClInclude>
+    <ClInclude Include="foot.h">
+      <Filter>Foot</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="beetles_PS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="beetles_VS.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="beetles.fx">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="beetles.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
